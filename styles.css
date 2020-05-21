@@ -29,3 +29,7 @@ body {
     padding: 10px;
     background-color: lightskyblue;
 }
+
+.scores-card {
+    text-align: center;
+}
