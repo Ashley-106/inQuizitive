@@ -4,30 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>2019 Quiz</title>
+    <title>InQuizitive</title>
 </head>
 <body>
 
     <header class="main-header">
-        <div class="container">
-            <h1 class="title">Quiz 2019</h1>
-        </div>
+        
+            <h1 id="home" class="title">In<span>Quiz</span>itive</h1>
+        
+        <nav>
+            <ul>
+                <li id="generalKnowledge">General Knowledge</li>
+                <li id="history">History</li>
+                <li id="geography">Geography</li>
+                <li id="sport">Sport</li>
+                <li id="politics">Politics</li>
+                <li id="music">Music</li>
+                <li id="british">British</li>
+                <li id="animals">Animals</li>
+                <li id="film">Film</li>
+            </ul>
+            
+        </nav>
     </header>
+
     <div class="container">
 
-        <div class="question-card">
-            <h3 class="question">Question 1</h3>
-            <p></p>
-            <input type="text" id="inputAnswer" value="">
-            <button type="button" id="submitAnswer" for="inputAnswer">Submit Answer</button>
+        <div id="quiz-info">
+
+            <h2>In<span>Quiz</span>itive</h2>
+            <p>Each Quiz has 20 Questions, at the end of each quiz you will be given your score. A score higher than 70% will complete the quiz and turn the colour of said quiz green. Try and complete them all.
+                The bottom right will display how many hints you have remaining, you will have 3 hints per quiz.<br> Use them wisely!
+            </p>
+
+            <h4>Choose a topic and complete it then move on</h4>
+
         </div>
 
-        <div class="scores-card">
-            <h2></h2>
-            <h3 class="scores"></h3>            
+        <div id="quiz-game">
+            <h2 id="quiz-name"></h2>
+            
+            <div class="question-card">
+
+                <!-- blue counter displaying question number top left -->
+                <div class="number">
+                    <p id="number">1</p>
+                </div>
+                <div class="hint">
+                    <p id="hintCount">3</p>
+                </div>
+
+                <p id="quizQuestion"></p>
+
+                <input id="inputAnswer" type="text" value="">
+
+                <div>
+                    <p id="hintDisplay"></p>
+                </div>
+
+                <div class="btn-div">
+                    <button id="submitAnswer" class="btn" type="button"  for="inputAnswer">Submit Answer</button>
+                <button id="hintbtn" class="btn">Hint</button>
+                </div>
+                
+            </div>
         </div>
+
+        <div id="score-board">
+
+            <h2>Scoreboard </h2>
+
+            <p id="score-output"></p>
+            <p id="pass-or-fail"></p>
+
+
+        </div>
+
+
 
     </div>
+
     <script src="quiz.js"></script>
     <script src="scripts.js"></script>
 </body>
