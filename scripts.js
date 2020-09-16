@@ -170,7 +170,6 @@ submitAnswer.addEventListener('click', () => {
             quizGame.style.display = "none";
             scoreBoard.style.display = "block";
     
-            correctScore = 20;
             scoreOutput.innerText = "You scored " + correctScore + "/20";
             
             if (correctScore > 14) {

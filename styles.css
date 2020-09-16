@@ -272,30 +272,33 @@ input {
 @media (max-width: 669px) {
 
     .main-header {
-        height: 200px;
+        height: 250px;
     }
 
     #quiz-info {
-        width: 350px;
-        height: 300px;
-        top: calc(50vh - (400px / 2));
-        left: calc(50vw - (400px / 2));
+        width: 200px;
+        height: 400px;
+        margin: 0;
+        top: calc(50vh - (200px / 2));
+        left: calc(50vw - ((400px / 2) - 70px) );
     }
     
     #quiz-game {
-        width: 350px;
-        height: 300px;
-        top: calc(50vh - (400px / 2));
-        left: calc(50vw - (400px / 2));
-        
+        width: 200px;
+        height: 400px;
+        top: calc(50vh - (200px / 2));
+        left: calc(50vw - ((400px / 2) - 70px) );
     }
     
     #score-board {
-        width: 350px;
-        height: 300px;
-        top: calc(50vh - (400px / 2));
-        left: calc(50vw - (400px / 2));
-        
+        width: 200px;
+        height: 200px;
+        top: calc(50vh - (200px / 2));
+        left: calc(50vw - ((400px / 2) - 70px) );
+    }
+
+    input {
+        width: 150px;
     }
 
 }
